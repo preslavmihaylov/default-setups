@@ -19,7 +19,6 @@ sudo apt-get update
 
 # Installations
 sudo apt-get install -yy vim
-sudo apt-get install -yy deluge # torrent tracker
 sudo apt-get install -yy google-chrome-stable
 sudo apt-get install -yy git
 sudo apt-get install -yy curl
