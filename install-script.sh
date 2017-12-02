@@ -1,5 +1,9 @@
 #!/bin/bash
 
+# initial upgrade of system
+sudo apt-get upgrade -yy
+sudo apt-get dist-upgrade -yy
+
 # add google repository to apt
 echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google.list 
 
@@ -18,4 +22,9 @@ sudo apt-get install -yy gcc
 # git configurations
 git config --global user.email "preslav@pmihaylov.com"
 git config --global user.name "PreslavMihaylov"
+
+# add dotfiles
+git clone https://github.com/PreslavMihaylov/dotfiles
+cp dotfiles/vimrc ~/.vimrc
+rm -rf dotfiles
 
