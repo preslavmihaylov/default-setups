@@ -23,6 +23,7 @@ sudo apt-get install -yy google-chrome-stable
 sudo apt-get install -yy git
 sudo apt-get install -yy curl
 sudo apt-get install -yy build-essential
+sudo apt-get install -yy libbsd-dev # bsd c library
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
