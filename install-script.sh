@@ -41,8 +41,6 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 
 # add dotfiles
 git clone https://github.com/PreslavMihaylov/dotfiles
-cp dotfiles/vimrc ~/.vimrc
-rm -rf ~/.vim
-cp -r dotfiles/vim ~/.vim
+./dotfiles/install.sh
 rm -rf dotfiles
 
