@@ -5,7 +5,7 @@ sudo apt-get upgrade -yy
 sudo apt-get dist-upgrade -yy
 
 # apt repositories
-echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list 
+echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
 
 # ppa
@@ -25,7 +25,8 @@ sudo apt-get install -yy git
 sudo apt-get install -yy curl
 sudo apt-get install -yy build-essential
 sudo apt-get install -yy valgrind
-sudo apt-get install -yy ctags # go to function definitions tool
+sudo apt-get install -yy ctags
+sudo apt-get install -yy cscope
 sudo apt-get install -yy libbsd-dev # bsd c library
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
