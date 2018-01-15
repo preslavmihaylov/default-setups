@@ -24,10 +24,14 @@ sudo apt-get install -yy google-chrome-stable
 sudo apt-get install -yy git
 sudo apt-get install -yy curl
 sudo apt-get install -yy build-essential
+sudo apt-get install -yy cmake
 sudo apt-get install -yy valgrind
 sudo apt-get install -yy ctags
 sudo apt-get install -yy cscope
 sudo apt-get install -yy libbsd-dev # bsd c library
+sudo apt-get install -yy python
+sudo apt-get install -yy python3
+sudo apt-get install -yy python-dev
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
