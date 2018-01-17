@@ -28,6 +28,7 @@ sudo apt-get install -yy cmake
 sudo apt-get install -yy valgrind
 sudo apt-get install -yy ctags
 sudo apt-get install -yy cscope
+sudo apt-get install -yy tmux
 sudo apt-get install -yy libbsd-dev # bsd c library
 sudo apt-get install -yy python
 sudo apt-get install -yy python3
