@@ -46,6 +46,11 @@ git config --global user.name "PreslavMihaylov"
 # add bulgarian phonetic keyboard input
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'bg+phonetic')]"
 
+# set default wallpaper
+cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
+gsettings set org.gnome.desktop.background picture-uri \
+    "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
+
 # add dotfiles
 git clone https://github.com/PreslavMihaylov/dotfiles
 ./dotfiles/install.sh
