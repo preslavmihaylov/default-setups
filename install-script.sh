@@ -51,6 +51,10 @@ cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
 gsettings set org.gnome.desktop.background picture-uri \
     "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
 
+# switch from wayland to xorg in ubuntu 17 for shutter to work
+sudo sed /etc/gdm3/custom.conf -i -e \
+    's/#WaylandEnable=false/WaylandEnable=false/g'
+
 # add dotfiles
 git clone https://github.com/PreslavMihaylov/dotfiles
 ./dotfiles/install.sh
