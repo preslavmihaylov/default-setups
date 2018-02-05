@@ -28,6 +28,7 @@ sudo apt-get install -yy cmake
 sudo apt-get install -yy valgrind
 sudo apt-get install -yy ctags
 sudo apt-get install -yy cscope
+sudo apt-get install -yy cgdb
 sudo apt-get install -yy tmux
 sudo apt-get install -yy libbsd-dev # bsd c library
 sudo apt-get install -yy python
@@ -45,6 +46,15 @@ git config --global user.name "PreslavMihaylov"
 
 # add bulgarian phonetic keyboard input
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'bg+phonetic')]"
+
+# set default wallpaper
+cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
+gsettings set org.gnome.desktop.background picture-uri \
+    "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
+
+# switch from wayland to xorg in ubuntu 17 for shutter to work
+sudo sed /etc/gdm3/custom.conf -i -e \
+    's/#WaylandEnable=false/WaylandEnable=false/g'
 
 # add dotfiles
 git clone https://github.com/PreslavMihaylov/dotfiles
