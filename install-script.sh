@@ -31,10 +31,12 @@ sudo apt-get install -yy cscope
 sudo apt-get install -yy cgdb
 sudo apt-get install -yy tmux
 sudo apt-get install -yy libbsd-dev # bsd c library
+sudo apt-get install -yy maven
 sudo apt-get install -yy python
 sudo apt-get install -yy python3
 sudo apt-get install -yy python-dev
 sudo apt-get install -yy python-pip
+sudo apt-get install -yy npm # includes nodejs
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
