@@ -35,6 +35,7 @@ sudo apt-get install -yy maven
 sudo apt-get install -yy python
 sudo apt-get install -yy python3
 sudo apt-get install -yy python-dev
+sudo apt-get install -yy python-pip
 sudo apt-get install -yy npm # includes nodejs
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
