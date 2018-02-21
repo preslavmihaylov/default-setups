@@ -44,6 +44,7 @@ sudo apt-get install -yy skypeforlinux
 # git configurations
 git config --global user.email "preslav@pmihaylov.com"
 git config --global user.name "PreslavMihaylov"
+git config --system core.editor "vim"
 
 # add bulgarian phonetic keyboard input
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'bg+phonetic')]"
