@@ -7,6 +7,7 @@ sudo apt-get dist-upgrade -yy
 # apt repositories
 echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
 echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
+curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
 # ppa
 sudo add-apt-repository -yy ppa:nathan-renniewaldock/flux
@@ -36,7 +37,8 @@ sudo apt-get install -yy python
 sudo apt-get install -yy python3
 sudo apt-get install -yy python-dev
 sudo apt-get install -yy python-pip
-sudo apt-get install -yy npm # includes nodejs
+sudo apt-get install -yy npm 
+sudo apt-get install -yy nodejs
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
@@ -63,4 +65,3 @@ sudo sed /etc/gdm3/custom.conf -i -e \
 git clone https://github.com/PreslavMihaylov/dotfiles
 ./dotfiles/install.sh
 rm -rf dotfiles
-
