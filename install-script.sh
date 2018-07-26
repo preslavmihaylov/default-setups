@@ -1,5 +1,11 @@
 #!/bin/bash
 
+# Ask for sudo access at start of script
+if [ $EUID != 0 ]; then
+    sudo "$0" "$@"
+    exit $?
+fi
+
 # initial upgrade of system
 sudo apt-get upgrade -yy
 sudo apt-get dist-upgrade -yy
