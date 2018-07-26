@@ -55,6 +55,7 @@ git config --system core.editor "vim"
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'bg+phonetic')]"
 
 # set default wallpaper
+mkdir -p $HOME/Pictures/Wallpapers
 cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
 gsettings set org.gnome.desktop.background picture-uri \
     "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
