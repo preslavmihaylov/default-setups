@@ -17,6 +17,7 @@ curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
 # ppa
 sudo add-apt-repository -yy ppa:nathan-renniewaldock/flux
+sudo add-apt-repository -yy ppa:danielrichter2007/grub-customizer
 
 # repository keys
 wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-key add -
@@ -51,6 +52,7 @@ sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
 sudo apt-get install -yy skypeforlinux
+sudo apt-get install -yy grub-customizer
 
 # git configurations
 git config --global user.email "preslav@pmihaylov.com"
