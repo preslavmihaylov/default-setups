@@ -9,6 +9,7 @@ fi
 # initial upgrade of system
 sudo apt-get upgrade -yy
 sudo apt-get dist-upgrade -yy
+sudo apt-get install software-properties-common
 
 # apt repositories
 echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
@@ -18,6 +19,7 @@ curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 # ppa
 sudo add-apt-repository -yy ppa:nathan-renniewaldock/flux
 sudo add-apt-repository -yy ppa:danielrichter2007/grub-customizer
+sudo add-apt-repository -yy ppa:neovim-ppa/stable
 
 # repository keys
 wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-key add -
@@ -26,8 +28,12 @@ curl "https://repo.skype.com/data/SKYPE-GPG-KEY" | sudo apt-key add -
 sudo apt-get update
 
 # Installations
-sudo apt-get install -yy vim
-sudo apt-get install -yy vim-gui-common
+
+# migrated to neovim. Left for reference
+# sudo apt-get install -yy vim
+# sudo apt-get install -yy vim-gui-common
+
+sudo apt-get install -yy neovim
 sudo apt-get install -yy google-chrome-stable
 sudo apt-get install -yy git
 sudo apt-get install -yy curl
