@@ -7,13 +7,13 @@ if [ $EUID != 0 ]; then
 fi
 
 # initial upgrade of system
+sudo apt-get update -yy
 sudo apt-get upgrade -yy
 sudo apt-get dist-upgrade -yy
 sudo apt-get install software-properties-common
 
 # apt repositories
 echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
-echo "deb https://repo.skype.com/deb stable main" | sudo tee /etc/apt/sources.list.d/skypeforlinux.list
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
 # ppa
@@ -23,7 +23,6 @@ sudo add-apt-repository -yy ppa:neovim-ppa/stable
 
 # repository keys
 wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-key add -
-curl "https://repo.skype.com/data/SKYPE-GPG-KEY" | sudo apt-key add -
 
 sudo apt-get update
 
@@ -52,13 +51,17 @@ sudo apt-get install -yy python
 sudo apt-get install -yy python3
 sudo apt-get install -yy python-dev
 sudo apt-get install -yy python-pip
+sudo apt-get install -yy python3-pip
 sudo apt-get install -yy npm
 sudo apt-get install -yy nodejs
 sudo apt-get install -yy shutter # screenshot capture sw
 sudo apt-get install -yy fluxgui # eye protection sw
 sudo apt-get install -yy meld # file diff comparer sw
-sudo apt-get install -yy skypeforlinux
 sudo apt-get install -yy grub-customizer
+
+# switch from wayland to xorg in ubuntu 17 for shutter to work
+sudo sed /etc/gdm3/custom.conf -i -e \
+    's/#WaylandEnable=false/WaylandEnable=false/g'
 
 # git configurations
 git config --global user.email "preslav@pmihaylov.com"
@@ -74,11 +77,7 @@ cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
 gsettings set org.gnome.desktop.background picture-uri \
     "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
 
-# switch from wayland to xorg in ubuntu 17 for shutter to work
-sudo sed /etc/gdm3/custom.conf -i -e \
-    's/#WaylandEnable=false/WaylandEnable=false/g'
-
 # add dotfiles
-git clone https://github.com/PreslavMihaylov/dotfiles
-./dotfiles/install.sh
+git clone --recurse-submodules https://github.com/PreslavMihaylov/dotfiles
+cd dotfiles && ./install.sh
 rm -rf dotfiles
