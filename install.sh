@@ -61,6 +61,9 @@ sudo apt-get install -yy meld # file diff comparer sw
 sudo apt-get install -yy grub-customizer
 sudo apt-get install -yy gnome-tweak-tool
 
+# install golang
+./install_go.sh
+
 # switch from wayland to xorg in ubuntu 17 for shutter to work
 sudo sed /etc/gdm3/custom.conf -i -e \
     's/#WaylandEnable=false/WaylandEnable=false/g'
