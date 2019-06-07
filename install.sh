@@ -80,6 +80,10 @@ gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', '
 # clicking on app in dock minimizes it
 gsettings set org.gnome.shell.extensions.dash-to-dock click-action 'minimize'
 
+# set terminal background color to match vim molokai colorscheme
+PROF_ID=$(dconf list /org/gnome/terminal/legacy/profiles:/ | sed -n 2p)
+dconf write /org/gnome/terminal/legacy/profiles:/${PROF_ID}background-color "'rgb(28, 28, 28)'"
+
 # set default wallpaper
 mkdir -p $HOME/Pictures/Wallpapers
 cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
