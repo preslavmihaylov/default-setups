@@ -28,26 +28,29 @@ wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-
 sudo apt-get update
 
 # Installations
-
-# migrated to neovim. Left for reference
-# sudo apt-get install -yy vim
-# sudo apt-get install -yy vim-gui-common
-
+## Essential
 sudo apt-get install -yy neovim
-sudo apt-get install -yy google-chrome-stable
+# migrated to neovim. Left for reference
+    # sudo apt-get install -yy vim
+    # sudo apt-get install -yy vim-gui-common
+
 sudo apt-get install -yy git
 sudo apt-get install -yy curl
+sudo apt-get install -yy tmux
+sudo apt-get install -yy ctags
+
+## C/CPP Specific
 sudo apt-get install -yy build-essential
 sudo apt-get install -yy cmake
 sudo apt-get install -yy valgrind
-sudo apt-get install -yy ctags
 sudo apt-get install -yy cscope
 sudo apt-get install -yy cgdb
-sudo apt-get install -yy tmux
 sudo apt-get install -yy libbsd-dev # bsd c library
 sudo apt-get install -yy bear # tool for extracting compilation database
 sudo apt-get install -yy checkinstall
 sudo apt-get install -yy maven
+
+## Programming Languages/Tools
 sudo apt-get install -yy python
 sudo apt-get install -yy python3
 sudo apt-get install -yy python-dev
@@ -55,15 +58,20 @@ sudo apt-get install -yy python-pip
 sudo apt-get install -yy python3-pip
 sudo apt-get install -yy npm
 sudo apt-get install -yy nodejs
-sudo apt-get install -yy shutter # screenshot capture sw
-sudo apt-get install -yy fluxgui # eye protection sw
-sudo apt-get install -yy meld # file diff comparer sw
-sudo apt-get install -yy grub-customizer
-sudo apt-get install -yy gnome-tweak-tool
 
 # install golang
 ./install_go.sh
 
+## Desktop Apps
+sudo apt-get install -yy shutter # screenshot capture sw
+sudo apt-get install -yy fluxgui # eye protection sw
+sudo apt-get install -yy meld # file diff comparer sw
+sudo apt-get install -yy google-chrome-stable
+sudo apt-get install -yy grub-customizer
+sudo apt-get install -yy gnome-tweak-tool
+sudo snap install telegram-desktop
+
+## Other Options
 # switch from wayland to xorg in ubuntu 17 for shutter to work
 sudo sed /etc/gdm3/custom.conf -i -e \
     's/#WaylandEnable=false/WaylandEnable=false/g'
