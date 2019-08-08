@@ -10,10 +10,10 @@ fi
 sudo apt-get update -yy
 sudo apt-get upgrade -yy
 sudo apt-get dist-upgrade -yy
-sudo apt-get install software-properties-common
 
 # apt repositories
 echo 'deb http://dl.google.com/linux/chrome/deb/ stable main' | sudo tee /etc/apt/sources.list.d/google-chrome.list
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
 curl -sL https://deb.nodesource.com/setup_9.x | sudo -E bash -
 
 # ppa
@@ -23,7 +23,10 @@ sudo add-apt-repository -yy ppa:neovim-ppa/stable
 sudo add-apt-repository -yy universe
 
 # repository keys
+## chrome
 wget -q -O - "https://dl-ssl.google.com/linux/linux_signing_key.pub" | sudo apt-key add -
+## docker
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
 
 sudo apt-get update
 
@@ -34,8 +37,12 @@ sudo apt-get install -yy neovim
     # sudo apt-get install -yy vim
     # sudo apt-get install -yy vim-gui-common
 
-sudo apt-get install -yy git
+sudo apt-get install -yy software-properties-common
+sudo apt-get install -yy apt-transport-https
+sudo apt-get install -yy ca-certificates
 sudo apt-get install -yy curl
+sudo apt-get install -yy gnupg-agent
+sudo apt-get install -yy git
 sudo apt-get install -yy tmux
 sudo apt-get install -yy ctags
 
@@ -58,6 +65,9 @@ sudo apt-get install -yy python-pip
 sudo apt-get install -yy python3-pip
 sudo apt-get install -yy npm
 sudo apt-get install -yy nodejs
+sudo apt-get install -yy docker-ce
+sudo apt-getin install -yy docker-ce-cli
+sudo apt-getin install -yy containerd.io
 
 # install golang
 ./install_go.sh
