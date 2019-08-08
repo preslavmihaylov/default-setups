@@ -86,6 +86,10 @@ sudo snap install telegram-desktop
 sudo sed /etc/gdm3/custom.conf -i -e \
     's/#WaylandEnable=false/WaylandEnable=false/g'
 
+# Add current user to docker group to avoid permission denied errors
+sudo groupadd docker
+sudo usermod -aG docker $(whoami)
+
 # change default resolution of grub menu on bootup
 sudo sed 's/#GRUB_GFXMODE="[[:digit:]]\+x[[:digit:]]\+"/GRUB_GFXMODE="640x480"/' /etc/default/grub
 sudo update-grub
