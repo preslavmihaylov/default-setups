@@ -66,11 +66,18 @@ sudo apt-get install -yy python3-pip
 sudo apt-get install -yy npm
 sudo apt-get install -yy nodejs
 sudo apt-get install -yy docker-ce
-sudo apt-getin install -yy docker-ce-cli
-sudo apt-getin install -yy containerd.io
+sudo apt-get install -yy docker-ce-cli
+sudo apt-get install -yy containerd.io
 
 # install golang
 ./install_go.sh
+
+# install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.24.1/docker-compose-$(uname -s)-$(uname -m)" \
+    -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+sudo curl -L https://raw.githubusercontent.com/docker/compose/1.24.1/contrib/completion/bash/docker-compose \
+    -o /etc/bash_completion.d/docker-compose
 
 ## Desktop Apps
 sudo apt-get install -yy shutter # screenshot capture sw
