@@ -145,6 +145,9 @@ cp ./default_wallpaper.jpg $HOME/Pictures/Wallpapers/
 gsettings set org.gnome.desktop.background picture-uri \
     "file://$HOME/Pictures/Wallpapers/default_wallpaper.jpg"
 
+# change ubuntu computer name
+hostnamectl set-hostname 'winterfell'
+
 # add dotfiles
 git clone --recurse-submodules https://github.com/PreslavMihaylov/dotfiles
 cd dotfiles && ./install.sh
