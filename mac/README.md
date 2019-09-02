@@ -49,3 +49,7 @@ Manually from website:
  * Install 'flux' from site  
  * Install 'Spotify' from site  
  * Install 'Zoom' from site  
+
+## Keyboard key repeat delay
+System Preferences > Keyboard > Delay Until Repeat
+ * Set it to 4 out of 6
