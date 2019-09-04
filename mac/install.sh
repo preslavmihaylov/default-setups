@@ -17,6 +17,12 @@ brew install python@2
 brew install tmux
 brew install wget
 brew install golang
+brew install the_silver_searcher # ag command
+brew cask install alacritty
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 # configure GOPATH
 mkdir -p ~/programming/go/src ~/programming/go/pkg ~/programming/go/bin

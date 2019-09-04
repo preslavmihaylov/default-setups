@@ -37,6 +37,7 @@ sudo apt-get install -yy neovim
     # sudo apt-get install -yy vim
     # sudo apt-get install -yy vim-gui-common
 
+apt-get install silversearcher-ag # ag command
 sudo apt-get install -yy software-properties-common
 sudo apt-get install -yy apt-transport-https
 sudo apt-get install -yy ca-certificates
@@ -68,6 +69,10 @@ sudo apt-get install -yy nodejs
 sudo apt-get install -yy docker-ce
 sudo apt-get install -yy docker-ce-cli
 sudo apt-get install -yy containerd.io
+
+# install fzf
+git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
+~/.fzf/install
 
 # install golang
 ./install_go.sh
