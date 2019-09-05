@@ -66,6 +66,9 @@ sudo scutil --set HostName kingslanding
 sudo scutil --set LocalHostName kingslanding
 sudo scutil --set ComputerName kingslanding
 
+# setup key repeating
+defaults write -g ApplePressAndHoldEnabled -bool false
+
 # install dotfiles
 git clone --recurse-submodules https://github.com/preslavmihaylov/dotfiles
 cd dotfiles && ./install.sh
