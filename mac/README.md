@@ -20,13 +20,17 @@ Terminal > Preferences > Profiles > Basic
  * Selection -> Orange  
  * Cursor -> White (60% Opacity)  
 
-## Control-arrow keys working
+## Terminal special keys working
 Terminal > Preferences > Profiles > Basic > Keyboard  
  * Click plus and add options:  
-   * Ctrl + Up -> \033[1;5A  
-   * Ctrl + Right -> \033[1;5C  
-   * Ctrl + Down -> \033[1;5B  
-   * Ctrl + Left -> \033[1;5D  
+   * Ctrl + Up -> \033[1;5A
+   * Ctrl + Right -> \033[1;5C
+   * Ctrl + Down -> \033[1;5B
+   * Ctrl + Left -> \033[1;5D
+ * Remove following options:
+   * ⌥ + Right
+ * Enable following checkboxes
+   * Use Option as Meta key
 
 System Preferences > Keyboard > Shortcuts  
  * Disable 'Mission Control/Mission Control'  
