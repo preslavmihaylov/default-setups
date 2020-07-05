@@ -57,3 +57,6 @@ Manually from website:
 ## Keyboard key repeat delay
 System Preferences > Keyboard > Delay Until Repeat
  * Set it to 4 out of 6
+
+## Disable CAPS LOCK
+Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disable-caps-lock-on-mac-os-x/)
