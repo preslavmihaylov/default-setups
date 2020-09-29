@@ -134,6 +134,15 @@ git config --global user.email "preslav@pmihaylov.com"
 git config --global user.name "PreslavMihaylov"
 git config --system core.editor "vim"
 
+# git aliases
+git config --global alias.co checkout
+git config --global alias.a add
+git config --global alias.b branch
+git config --global alias.c commit
+git config --global alias.l log
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+
 # add bulgarian phonetic keyboard input
 gsettings set org.gnome.desktop.input-sources sources "[('xkb', 'us'), ('xkb', 'bg+phonetic')]"
 

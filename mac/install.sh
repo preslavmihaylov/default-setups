@@ -55,6 +55,15 @@ git config --global user.email "preslav@pmihaylov.com"
 git config --global user.name "preslavmihaylov"
 sudo git config --system core.editor "vim"
 
+# git aliases
+git config --global alias.co checkout
+git config --global alias.a add
+git config --global alias.b branch
+git config --global alias.c commit
+git config --global alias.l log
+git config --global alias.st status
+git config --global alias.unstage 'reset HEAD --'
+
 # setup neovim providers
 pip2 install --user --upgrade pynvim
 pip3 install --user --upgrade pynvim
