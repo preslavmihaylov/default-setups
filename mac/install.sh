@@ -19,6 +19,7 @@ brew install wget
 brew install golang
 brew install the_silver_searcher # ag command
 brew cask install alacritty
+brew install alacritty
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
