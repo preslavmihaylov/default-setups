@@ -21,6 +21,8 @@ Terminal > Preferences > Profiles > Basic
  * Cursor -> White (60% Opacity)  
 
 ## Terminal special keys working
+Even if you're using Alacritty, still open the old terminal app for these.
+
 Terminal > Preferences > Profiles > Basic > Keyboard  
  * Click plus and add options:  
    * Ctrl + Up -> \033[1;5A
