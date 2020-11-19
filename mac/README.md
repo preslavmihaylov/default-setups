@@ -63,3 +63,8 @@ System Preferences > Keyboard
 
 ## Disable CAPS LOCK
 Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disable-caps-lock-on-mac-os-x/)
+
+## Configure Spaces
+System Preferences > Keyboard > Shortcus
+ * Mission Control > Move Left a Space - Ctrl+Cmd+Left
+ * Mission Control > Move Right a Space - Ctrl+Cmd+Right
