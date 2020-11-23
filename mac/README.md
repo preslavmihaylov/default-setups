@@ -67,6 +67,9 @@ System Preferences > Keyboard
 Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disable-caps-lock-on-mac-os-x/)
 
 ## Configure Spaces
+On your touchpad, spread out three fingers to open the UI where spaces are configured.
+Add three spaces in total from the top bar. These will stay even after laptop is restarted.
+
 System Preferences > Keyboard > Shortcus
  * Mission Control > Move Left a Space - Ctrl+Cmd+Left
  * Mission Control > Move Right a Space - Ctrl+Cmd+Right
