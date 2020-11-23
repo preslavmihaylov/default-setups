@@ -47,6 +47,8 @@ System Preferences > Keyboard > Shortcuts
 ## Install Applications
 App Store > Search
  * Install 'Microsoft OneNote' 
+ * Install 'Microsoft PowerPoint' 
+ * Install 'Microsoft Word' 
  * Install 'all-in-one Messenger'  
  * Install 'Lightshot Screenshot'  
 
