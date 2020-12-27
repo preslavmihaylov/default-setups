@@ -8,20 +8,10 @@ System Preferences > Mouse > Point & Click
 System Preferences > Keyboard > Input Sources  
  * '+' -> 'Bulgarian Phonetic'  
 
-## Close terminal on exit
-Terminal > Preferences > Profiles > Basic > Shell  
- * 'When the shell exits' -> 'Close if the shell exited cleanly'  
-
-## Change terminal colors
-Terminal > Preferences > Profiles > Basic  
- * Background -> rgb(28, 28, 28)  
- * Text -> White  
- * Bold Text -> Cyan  
- * Selection -> Orange  
- * Cursor -> White (60% Opacity)  
-
 ## Terminal special keys working
-Even if you're using Alacritty, still open the old terminal app for these.
+I'm using Alacritty as my default terminal over the default `Terminal` application.
+
+Even if using Alacritty, still open the old terminal app for these.
 
 Terminal > Preferences > Profiles > Basic > Keyboard  
  * Click plus and add options:  
@@ -37,12 +27,6 @@ Terminal > Preferences > Profiles > Basic > Keyboard
 System Preferences > Keyboard > Shortcuts  
  * Disable 'Mission Control/Mission Control'  
  * Disable 'Mission Control/Application windows'  
- * Disable 'Mission Control/Move left a space'  
- * Disable 'Mission Control/Move right a space'  
-
-## Customize Terminal Colors for Mac
-`vim ~/.bash_aliases`  
- * Change the 'HOST_CLR' line  
 
 ## Install Applications
 App Store > Search
