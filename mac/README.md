@@ -29,13 +29,6 @@ System Preferences > Keyboard > Shortcuts
  * Disable 'Mission Control/Application windows'  
 
 ## Install Applications
-App Store > Search
- * Install 'Microsoft OneNote' 
- * Install 'Microsoft PowerPoint' 
- * Install 'Microsoft Word' 
- * Install 'all-in-one Messenger'  
- * Install 'Lightshot Screenshot'  
-
 Manually from website:
  * Install 'Google Chrome' from site  
  * Install 'flux' from site  

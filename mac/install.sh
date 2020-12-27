@@ -4,6 +4,7 @@
 /usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
 
 # install software
+brew install mas
 brew install git
 brew install bear
 brew install cmake
@@ -20,6 +21,14 @@ brew install golang
 brew install the_silver_searcher # ag command
 brew cask install alacritty
 brew install alacritty
+
+# install apps from app store
+mas install 462054704 # Microsoft Word
+mas install 462058435 # Microsoft Excel
+mas install 462062816 # Microsoft PowerPoint
+mas install 784801555 # Microsoft OneNote
+mas install 526298438 # Lightshot Screenshot
+mas install 1456462087 # All-in-one Messenger
 
 # install fzf
 git clone --depth 1 https://github.com/junegunn/fzf.git ~/.fzf
