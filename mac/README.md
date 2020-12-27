@@ -4,10 +4,6 @@ System Preferences > Mouse > Point & Click
  * Secondary click -> 'Click on right side'  
  * Disable 'Scroll direction: Natural'  
 
-## Add Bulgarian Phonetic
-System Preferences > Keyboard > Input Sources  
- * '+' -> 'Bulgarian Phonetic'  
-
 ## Terminal special keys working
 I'm using Alacritty as my default terminal over the default `Terminal` application.
 

@@ -88,6 +88,9 @@ sudo scutil --set ComputerName kingslanding
 # setup key repeating
 defaults write -g ApplePressAndHoldEnabled -bool false
 
+# Add Bulgarian Phonetic to input sources
+defaults write com.apple.HIToolbox AppleEnabledInputSources -array-add '<dict><key>InputSourceKind</key><string>Keyboard Layout</string><key>KeyboardLayout ID</key><integer>19529</integer><key>KeyboardLayout Name</key><string>Bulgarian - Phonetic</string></dict>'
+
 # install dotfiles
 git clone --recurse-submodules https://github.com/preslavmihaylov/dotfiles
 cd dotfiles && ./install.sh
