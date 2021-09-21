@@ -30,6 +30,7 @@ Manually from website:
  * Install 'flux' from site  
  * Install 'Spotify' from site  
  * Install 'Zoom' from site  
+ * Install 'Docker Desktop' from [site](https://docs.docker.com/desktop/mac/install/)
 
 ## Keyboard key repeat delay
 System Preferences > Keyboard
