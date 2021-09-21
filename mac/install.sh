@@ -41,6 +41,7 @@ mkdir -p ~/prg/go/src ~/prg/go/pkg ~/prg/go/bin
 
 # install go binaries
 go install golang.org/x/tools/gopls@latest
+go install github.com/arl/gitmux@latest
 
 # git configuration
 git config --global user.email "preslav@pmihaylov.com"
