@@ -1,4 +1,7 @@
 # Things to do manually
+## Update to latest MacOS
+System Preferences > Software Update > Automatically keep my Mac up to date & update to latest version
+
 ## Make mouse work correctly
 System Preferences > Mouse > Point & Click  
  * Secondary click -> 'Click on right si0p-de'  
@@ -9,6 +12,9 @@ Manually from website:
  * Install 'Google Chrome' from site
  * Install 'Zoom' from [site](https://zoom.us/download)  
  * Install 'Docker Desktop' from [site](https://docs.docker.com/desktop/mac/install/)
+
+Manually from App Store:
+ * Slack for Desktop
 
 ## Keyboard key repeat delay
 System Preferences > Keyboard
