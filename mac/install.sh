@@ -1,8 +1,5 @@
 #!/bin/bash
 
-# install brew
-/usr/bin/ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-
 # install software
 brew install mas
 brew install git
@@ -70,6 +67,9 @@ sudo scutil --set ComputerName kingslanding
 
 # setup key repeating
 defaults write -g ApplePressAndHoldEnabled -bool false
+
+# rebind tilde sign to be in the correct place for magic keyboard - https://apple.stackexchange.com/questions/329085/tilde-and-plus-minus-%C2%B1-in-wrong-place-on-keyboard
+hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000035,"HIDKeyboardModifierMappingDst":0x700000064},{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035}]}'
 
 # install dotfiles
 git clone --recurse-submodules https://github.com/preslavmihaylov/dotfiles
