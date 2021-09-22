@@ -3,6 +3,9 @@
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/uninstall.sh)"
 arch -x86_64 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install.sh)"
 
+# create my common directories
+mkdir -p ~/scripts/.system
+mkdir -p ~/prg
 
 # install software
 brew install mas
@@ -74,8 +77,32 @@ sudo scutil --set ComputerName kingslanding
 # setup key repeating
 defaults write -g ApplePressAndHoldEnabled -bool false
 
-# rebind tilde sign to be in the correct place for magic keyboard - https://apple.stackexchange.com/questions/329085/tilde-and-plus-minus-%C2%B1-in-wrong-place-on-keyboard
+# rebind tilde sign to be in the correct place for magic keyboard:
+# https://apple.stackexchange.com/questions/329085/tilde-and-plus-minus-%C2%B1-in-wrong-place-on-keyboard
+cat << 'EOF' > ~/scripts/.system/tilde-switch.sh && chmod +x ~/scripts/.system/tilde-switch.sh
+#!/bin/bash
+
 hidutil property --set '{"UserKeyMapping":[{"HIDKeyboardModifierMappingSrc":0x700000035,"HIDKeyboardModifierMappingDst":0x700000064},{"HIDKeyboardModifierMappingSrc":0x700000064,"HIDKeyboardModifierMappingDst":0x700000035}]}'
+EOF
+
+bash -c "cat > ~/Library/LaunchAgents/org.custom.tilde-switch.plist" << EOF
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+  <dict>
+    <key>Label</key>
+    <string>org.custom.tilde-switch</string>
+    <key>Program</key>
+    <string>${HOME}/scripts/.system/tilde-switch.sh</string>
+    <key>RunAtLoad</key>
+    <true/>
+    <key>KeepAlive</key>
+    <false/>
+  </dict>
+</plist>
+EOF
+
+launchctl load -w -- ~/Library/LaunchAgents/org.custom.tilde-switch.plist
 
 # install dotfiles
 git clone --recurse-submodules https://github.com/preslavmihaylov/dotfiles
