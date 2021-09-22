@@ -10,6 +10,7 @@ mkdir -p ~/prg
 # install software
 brew install mas
 brew install git
+brew install rar
 brew install bear
 brew install cmake
 brew install cscope
