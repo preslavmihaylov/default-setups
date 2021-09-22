@@ -26,10 +26,8 @@ System Preferences > Keyboard > Shortcuts
 
 ## Install Applications
 Manually from website:
- * Install 'Google Chrome' from site  
- * Install 'flux' from site  
- * Install 'Spotify' from site  
- * Install 'Zoom' from site  
+ * Install 'Google Chrome' from site
+ * Install 'Zoom' from [site](https://zoom.us/download)  
  * Install 'Docker Desktop' from [site](https://docs.docker.com/desktop/mac/install/)
 
 ## Keyboard key repeat delay
