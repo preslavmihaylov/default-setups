@@ -10,6 +10,9 @@ Manually from website:
  * Install 'Zoom' from [site](https://zoom.us/download)  
  * Install 'Docker Desktop' from [site](https://docs.docker.com/desktop/mac/install/)
 
+Manually from App Store:
+ * Slack for Desktop
+
 ## Keyboard key repeat delay
 System Preferences > Keyboard
  * Key repeat delay - max
