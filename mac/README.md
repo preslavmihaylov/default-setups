@@ -16,6 +16,9 @@ Manually from website:
 Manually from App Store:
  * Slack for Desktop
 
+## Function keys
+System Preferences > General > Use F1, F2, etc. keys as standard function keys
+
 ## Keyboard key repeat delay
 System Preferences > Keyboard
  * Key repeat delay - max
