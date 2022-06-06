@@ -31,6 +31,10 @@ Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disa
 System Preferences > Keyboard > Shortcuts
  * Screenshots > Save picture of selected area as a file - Option+Cmd+P
 
+## Trackpad
+Use the following settings:
+![trackpad-options](https://user-images.githubusercontent.com/7642330/172181634-6d89afc2-24c3-41b7-a952-02c4652bf279.png)
+
 ## Configure Spaces
 On your touchpad, spread out three fingers to open the UI where spaces are configured.
 Add three spaces in total from the top bar. These will stay even after laptop is restarted.
