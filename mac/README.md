@@ -27,6 +27,10 @@ System Preferences > Keyboard
 ## Disable CAPS LOCK
 Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disable-caps-lock-on-mac-os-x/)
 
+## Taking screenshots
+System Preferences > Keyboard > Shortcuts
+ * Screenshots > Save picture of selected area as a file - Option+Cmd+P
+
 ## Configure Spaces
 On your touchpad, spread out three fingers to open the UI where spaces are configured.
 Add three spaces in total from the top bar. These will stay even after laptop is restarted.
