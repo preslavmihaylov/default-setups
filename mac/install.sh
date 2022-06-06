@@ -17,6 +17,8 @@ brew install cscope
 brew install gdb
 brew install ctags
 brew install node
+brew install nvm
+brew install yarn
 brew install neovim
 brew install python
 brew install python@2
