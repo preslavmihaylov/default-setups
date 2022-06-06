@@ -33,7 +33,9 @@ System Preferences > Keyboard > Shortcuts
 
 ## Trackpad
 Use the following settings:
-![trackpad-options](https://user-images.githubusercontent.com/7642330/172181634-6d89afc2-24c3-41b7-a952-02c4652bf279.png)
+
+![trackpad-options](https://user-images.githubusercontent.com/7642330/172181762-78e1652d-373a-475a-a964-d56cd23f6c49.png)
+
 
 ## Configure Spaces
 On your touchpad, spread out three fingers to open the UI where spaces are configured.
