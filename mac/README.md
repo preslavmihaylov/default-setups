@@ -4,7 +4,7 @@ System Preferences > Software Update > Automatically keep my Mac up to date & up
 
 ## Make mouse work correctly
 System Preferences > Mouse > Point & Click  
- * Secondary click -> 'Click on right si0p-de'  
+ * Secondary click -> 'Click on right side'  
  * Disable 'Scroll direction: Natural'  
 
 ## Install Applications
