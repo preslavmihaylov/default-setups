@@ -19,13 +19,13 @@ Manually from App Store:
 ## Function keys
 System Preferences > Keyboard > Keyboard Shortcuts > Function Keys > Use F1, F2, etc. keys as standard function keys
 
+## Disable CAPS LOCK
+System Preferences > Keyboard > Keyboard Shortcuts > Modifier Keys > (set CAPS Lock to 'None')
+
 ## Keyboard key repeat delay
 System Preferences > Keyboard
  * Key repeat delay - max
- * Delay until repeat - 5 out of 6
-
-## Disable CAPS LOCK
-Follow steps in [this article](https://www.howtogeek.com/howto/38828/how-to-disable-caps-lock-on-mac-os-x/)
+ * Delay until repeat - 6 out of 6
 
 ## Taking screenshots
 System Preferences > Keyboard > Shortcuts
