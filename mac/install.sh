@@ -15,7 +15,7 @@ brew install bear
 brew install cmake
 brew install cscope
 brew install gdb
-brew install ctags
+brew install --HEAD universal-ctags/universal-ctags/universal-ctags
 brew install node
 brew install nvm
 brew install yarn
