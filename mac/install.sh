@@ -65,6 +65,7 @@ git config --global alias.pl pull
 git config --global alias.l log
 git config --global alias.st status
 git config --global alias.unstage 'reset HEAD --'
+git config --global alias.pu '!git push -u origin HEAD'
 
 # setup neovim providers
 pip2 install --user --upgrade pynvim
