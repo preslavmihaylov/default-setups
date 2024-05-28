@@ -31,6 +31,7 @@ brew install ffmpeg
 brew install tmux
 brew install watchman
 brew install jq
+brew install fd
 
 # install apps from app store
 mas install 462054704 # Microsoft Word
